@@ -17,7 +17,7 @@ class Net extends StatelessWidget {
         final avg = last['avg'].toDouble();
         List<double> data = [];
         for (Map ping in state['net']) {
-          data.add(ping['avg']);
+          data.add(ping['avg'].toDouble());
         }
         return Gauge(
           title: 'NET',

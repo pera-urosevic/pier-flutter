@@ -12,7 +12,7 @@ class Net extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (state.containsKey('net') && state['net'] != null && state['net'].length > 0) {
-      final last = state['net'][0];
+      final last = state['net'].last;
       if (last.containsKey('avg') && last['avg'] != null) {
         final avg = last['avg'].toDouble();
         List<double> data = [];
